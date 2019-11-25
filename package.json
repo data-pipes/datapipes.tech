@@ -1,23 +1,23 @@
 {
-  "name": "docsmasters.com",
+  "name": "datapipes.tech",
   "version": "1.0.0",
-  "description": "DocsMasters.com",
+  "description": "datapipes.tech",
   "main": "index.js",
   "dependencies": {
     "firebase-tools": "^6.5.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-prod": "echo \"build the app\""
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/docsmasters/docsmasters.com.git"
+    "url": "git+ssh://git@github.com:data-pipes/datapipes.tech.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/docsmasters/docsmasters.com/issues"
+    "url": "https://github.com/data-pipes/datapipes.tech/issues"
   },
-  "homepage": "https://gitlab.com/docsmasters/docsmasters.com#README"
+  "homepage": "https://github.com/data-pipes/datapipes.tech#README"
 }

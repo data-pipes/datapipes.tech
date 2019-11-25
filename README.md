@@ -14,7 +14,4 @@ npm install
 
 ## Deployment
 
- firebase login
-
- .firebase deploy
-
+firebase deploy
