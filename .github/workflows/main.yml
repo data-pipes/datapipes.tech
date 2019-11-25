@@ -18,8 +18,8 @@ jobs:
       - name: Archive Production Artifact
         uses: actions/upload-artifact@master
         with:
-          name: public
-          path: dist
+          name: dist
+          path: public
   deploy:
     name: Deploy
     needs: build
