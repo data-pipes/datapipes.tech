@@ -9,8 +9,6 @@ import {
   NavItemsBottomNav
 } from './NavMobile.style';
 
-import NavLinks from './NavLinks';
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ThemeToggleContext from '../ThemeToggleContext';
 import Burger from './Burger';
@@ -55,8 +53,6 @@ const NavbarMobile = () => {
         </FloatingButton>
 
         <NavItemsBottomNav isOpen={isMenuOpen}>
-          <NavLinks NavItem={NavItem} />
-
           <NavItem><Link to="/blog">blog</Link></NavItem>
           <NavItem style={{ width: 'auto' }}>
             <DarkModeButton />

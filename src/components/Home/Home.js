@@ -6,39 +6,11 @@ import { HeroCard } from './HeroCard';
 import { HomeWrapper, Intro } from './Home.style';
 
 import IconLink from 'src/components/common/IconLink';
-import PageHeader from 'src/components/common/PageHeader';
 import Flex from "src/components/common/Flex";
 import Button from "src/components/common/Button";
 
 import { Card, CardIcon, CardText, CardTitle } from "src/components/common/Card";
 
-const ThingsILove = () => (
-  <Flex justify="space-between" align="center">
-    <Card>
-      <CardIcon><FontAwesomeIcon icon="code" /></CardIcon>
-      <CardTitle>FrontEnd</CardTitle>
-      <CardText>
-        I'm more front end focused and love to work with Reactjs as well as pure HTML, CSS.
-      </CardText>
-    </Card>
-
-    <Card>
-      <CardIcon><FontAwesomeIcon icon={["fab", "js"]} /></CardIcon>
-      <CardTitle>Javascript</CardTitle>
-      <CardText>
-        I just extremely love javascript, I can’t even express how much I love javascript with just a few lines.
-      </CardText>
-    </Card>
-
-    <Card>
-      <CardIcon><FontAwesomeIcon icon="paint-brush" /></CardIcon>
-      <CardTitle>Creative Coding</CardTitle>
-      <CardText>
-        I love creative coding because I do both coding & designing. making beautiful art with code is very satisfying to me.
-      </CardText>
-    </Card>
-  </Flex>
-);
 
 const Home = () => {
   return (
@@ -65,10 +37,6 @@ const Home = () => {
         {/* </Parallax> */}
         <HeroCard />
       </Intro>
-
-      {/* Things I LOVE */}
-      <PageHeader style={{ marginBottom: 30 }}>Things i love <i className="fas fa-heart" /></PageHeader>
-      <ThingsILove />
 
     </HomeWrapper>
   )

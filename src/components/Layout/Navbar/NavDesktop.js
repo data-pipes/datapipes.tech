@@ -9,21 +9,18 @@ import {
   NavItem,
 } from './Navbar.style';
 
-import NavLinks from './NavLinks';
 import ToggleSwitch from 'src/components/common/ToggleSwitch';
 
 
 const NavDesktop = () => {
   return (
     <>
-      <SLink className="logo" smooth offset={-100} hashSpy={true} to="home">
+      <SLink className="logo" smooth offset={-100} hashSpy={true} to="/">
         <img src={logo} alt="Ivan Atanasov" />
       </SLink>
 
       <nav>
         <NavItems>
-          <NavLinks NavItem={NavItem} />
-
           <NavItem><Link to="/blog">blog</Link></NavItem>
           <NavItem>
             <ToggleSwitch />

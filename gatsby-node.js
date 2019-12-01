@@ -113,26 +113,6 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, store, cach
   const CC_PROJECTS_URI = 'https://anuraghazra.github.io/CanvasFun/data.json';
 
 
-  const createCreativeCodingNode = (project, i) => {
-    const nodeContent = JSON.stringify(project)
-
-    const node = {
-      id: createNodeId(`${i}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: `CreativeCoding`,
-        content: nodeContent,
-        contentDigest: createContentDigest(project)
-      },
-      ...project
-    }
-
-    // const node = Object.assign({}, project, nodeMeta);
-    // create `allCreativeCoding` Node
-    createNode(node);
-  }
-
   // GET IMAGE THUMBNAILS
   const createRemoteImage = async (project, i) => {
     try {
@@ -154,18 +134,9 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest, store, cach
   return axios.get(CC_PROJECTS_URI)
     .then(res => {
       res.data.forEach((project, i) => {
-        createCreativeCodingNode(project, i);
         createRemoteImage(project, i);
       })
     }).catch(err => {
-      // just create a dummy node to pass the build if faild to fetch data
-      createCreativeCodingNode({
-        id: '0',
-        demo: '',
-        img: '',
-        title: 'Error while loading Data',
-        src: '',
-      }, 0);
       throw new Error(err);
     })
 }
