@@ -24,7 +24,7 @@ const BlogPost = ({ data, pageContext }) => {
     url: baseSlugUrl
   }
 
-  const githubLink = `https://github.com/datapipes/tree/master/content${pageContext.slug}/index.md`;
+  const githubLink = `https://github.com/data-pipes/datapipes.tech/tree/master/content${pageContext.slug}/index.md`;
 
   return (
     <Layout>

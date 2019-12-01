@@ -1,15 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import svgRect from 'src/static/home_rect.svg'
 
 import { HeroCard } from './HeroCard';
 import { HomeWrapper, Intro } from './Home.style';
 
 import IconLink from 'src/components/common/IconLink';
-import Flex from "src/components/common/Flex";
 import Button from "src/components/common/Button";
 
-import { Card, CardIcon, CardText, CardTitle } from "src/components/common/Card";
 
 
 const Home = () => {
@@ -20,17 +17,15 @@ const Home = () => {
       <Intro>
         {/* <Parallax y={[50, -50]} className="home__text"> */}
         <div className="home__text">
-          <p>Hello, i’m</p>
-          <h1>Ivan Atanasov</h1>
-          <p className="adjust">CREATIVE FRONT-END WEB DEVELOPER</p>
+          <p>Streamline your data</p>
+          <h1>DataPipes.tech</h1>
+          <p className="adjust">Streamline your data</p>
 
           <div className="home__CTA">
-            <Button className="cta" as="a" href="#">Download Resume</Button>
-
             <div className="home__social">
-              <IconLink label="github" icon={["fab", "github"]} href="//github.com/anuraghazra" />
-              <IconLink label="twitter" icon={["fab", "twitter"]} href="//twitter.com/anuraghazru" />
-              <IconLink label="codepen" icon={["fab", "codepen"]} href="//codepen.io/anuraghazra" />
+              <IconLink label="github" icon={["fab", "github"]} href="//github.com/data-pipes" />
+              <IconLink label="twitter" icon={["fab", "twitter"]} href="//twitter.com/data_pipes" />
+              <IconLink label="linkedin" icon={["fab", "linkedin"]} href="//www.linkedin.com/company/datapipes" />
             </div>
           </div>
         </div>

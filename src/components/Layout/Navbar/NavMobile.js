@@ -53,6 +53,7 @@ const NavbarMobile = () => {
         </FloatingButton>
 
         <NavItemsBottomNav isOpen={isMenuOpen}>
+        <NavItem><Link to="/">home</Link></NavItem>
           <NavItem><Link to="/blog">blog</Link></NavItem>
           <NavItem style={{ width: 'auto' }}>
             <DarkModeButton />
