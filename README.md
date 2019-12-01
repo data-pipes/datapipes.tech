@@ -1,17 +1,41 @@
-# datapipes.tech
+### Step 1: Install Dependencies
 
-## Installation 
+install all the dependencies
+```bash
+npm i
+```
 
-apt install npm
+### Step 2: Start Development Server
 
-npm install -g firebase-tools
+Then start the development Server
+```
+npm run develop
+```
+After running the development server the site should be running on https://localhost:8000
 
-npm install
 
-## Local Testing
+## Tools Used
 
- firebase serve
+1. Gatsby.js (of course)
+2. Styled Components for styling
+3. Cypress for E2E Testing
+4. Jest for Unit Testing
+5. GitHUb Actions for CI/CD
 
-## Deployment
+## :v: Contributing
 
-firebase deploy
+*NOTE: if you want to change the [blog content](./content) or fix any typo you can do that from github's ui without cloning the repo locally*
+
+After cloning & setting up the local project you can push the changes to your github forke and make a pull request.
+
+> You can also run the tests locally to see if everything works fine with
+
+### Running tests
+```bash
+npm run test
+npm run test:e2e
+```
+
+------
+
+Made with :heart: and Gatsbyjs
