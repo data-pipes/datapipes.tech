@@ -11,7 +11,7 @@ Then start the development Server
 ```
 npm run develop
 ```
-After running the development server the site should be running on https://localhost:8000
+After running the development server the site should be running on https://localhost:8003
 
 
 ## Tools Used
@@ -20,7 +20,7 @@ After running the development server the site should be running on https://local
 2. Styled Components for styling
 3. Cypress for E2E Testing
 4. Jest for Unit Testing
-5. GitHUb Actions for CI/CD
+5. GitHub Actions for CI/CD
 
 ## :v: Contributing
 
