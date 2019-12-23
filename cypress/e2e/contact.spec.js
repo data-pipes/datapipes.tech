@@ -21,7 +21,7 @@ describe("Contact Section", () => {
       .should('have.class', 'invalid')
     cy.findByText(/submit/i)
       .should('have.attr', 'disabled')
-      .url().should('eq', 'http://localhost:8000/#contact')
+      .url().should('eq', 'http://localhost:8003/#contact')
   })
   it('should submit form with valid inputs', () => {
     cy.visit("/#contact")

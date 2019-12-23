@@ -51,6 +51,9 @@ export const Intro = styled.section`
     font-size: 24px;
   }
 
+  .home__social_icon {
+    margin-left:10px;
+  }
   
   @media ${props => props.theme.media.tablet} {
     justify-content: space-between;
