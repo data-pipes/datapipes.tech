@@ -41,7 +41,13 @@ module.exports = {
               showCaptions: true
             }
           },
-          `gatsby-plugin-social-banners`
+          {
+            resolve: `gatsby-plugin-social-banners`,
+            options: {
+              // required
+              baseImg: `${__dirname}/src/static/images/social-banner.jpg`
+            }
+          }
         ]
       }
     },
