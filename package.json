@@ -20,6 +20,7 @@
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.2.8",
     "gatsby-plugin-sitemap": "^2.2.19",
+    "gatsby-plugin-social-banners": "^1.0.3",
     "gatsby-plugin-styled-components": "^3.1.8",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-autolink-headers": "^2.1.13",
@@ -64,12 +65,10 @@
     "start-server-and-test": "^1.10.6"
   },
   "keywords": [
-    "gatsby",
-    "portfolio"
+    "gatsby"
   ],
   "license": "MIT",
   "scripts": {
-    "preinstall": "cd plugins/gatsby-plugin-social-banners && npm install",
     "now-build": "npm run build",
     "build": "gatsby build",
     "develop": "gatsby develop --host=0.0.0.0 --port 8003",
