@@ -22,7 +22,7 @@ const Footer = () => (
 
       <img width="35px" src={logo} alt="Datapipes" />
 
-      <p style={{ float: 'right' }}>Copyright © 2019 The Datapipes authors</p>
+      <p style={{ float: 'right' }}>Copyright © 2020 The Datapipes Authors</p>
     </Wrapper>
   </FooterWrapper>
 )
